@@ -217,7 +217,7 @@ With the plain output, cron/launchd can run it directly (every mapping, one
 command):
 
 ```cron
-0 7 * * *  cd ~/dev/nocfo_sync && .venv/bin/nocfo-sync sync --plain >> sync.log 2>&1
+0 7 * * *  cd ~/dev/nocfo-sync && .venv/bin/nocfo-sync sync --plain >> sync.log 2>&1
 ```
 
 ## The undocumented NoCFO folders API
