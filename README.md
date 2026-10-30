@@ -42,7 +42,7 @@ Google Drive for Desktop mount          NoCFO
 
 ```sh
 python3 -m venv .venv
-.venv/bin/pip install -e '.[dev]'
+.venv/bin/pip install -e . --group dev
 ```
 
 ## Configure

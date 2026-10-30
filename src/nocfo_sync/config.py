@@ -266,7 +266,7 @@ def find_config(explicit: str | Path | None = None) -> Path | None:
         return path
     for d in _search_dirs():
         candidate = d / "config.toml"
-        if candidate.exists():
+        if candidate.is_file():
             return candidate
     return None
 
@@ -274,7 +274,7 @@ def find_config(explicit: str | Path | None = None) -> Path | None:
 def _legacy_config() -> Path | None:
     for d in _search_dirs():
         candidate = d / "config"
-        if candidate.exists():
+        if candidate.is_file():
             return candidate
     return None
 
